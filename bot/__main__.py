@@ -66,7 +66,7 @@ def stats(update, context):
             f'<b>├⌬ Tᴏᴛᴀʟ→</b> {mem_t}\n'\
             f'<b>├⌬ Fʀᴇᴇ→</b> {mem_a}\n'\
             f'<b>╰─ Usᴇᴅ→</b> {mem_u}\n'
-    update.effective_message.reply_photo("https://te.legra.ph/file/426b9621c4f8f4141d921.jpg", stats, parse_mode='HTMl')
+    update.effective_message.reply_photo("https://te.legra.ph/file/ea234c15843584252e980.jpg", stats, parse_mode='HTMl')
  
 
 
