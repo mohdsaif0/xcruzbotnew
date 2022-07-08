@@ -216,7 +216,7 @@ def main():
                         chat_id, msg_id = map(int, f)
                     msg = 'MIRROR BOT RESTARTED!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐚𝐠𝐚𝐢𝐧\n\n#Rebooted #Updated'
                 else:
-                    msg = '𝕄𝕀ℝℝ𝕆ℝ 𝔹𝕆𝕋 ℝ𝔼𝕊𝕋𝔸ℝ𝕋𝔼𝔻!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐚𝐠𝐚𝐢𝐧\n\n𝐁𝐎𝐓 𝐎𝐅 𝐁𝐑𝐔𝐂𝐄 𝐌𝐈𝐑𝐑𝐎𝐑\n\n#Rebooted #Restarted'
+                    msg = '𝕄𝕀ℝℝ𝕆ℝ 𝔹𝕆𝕋 ℝ𝔼𝕊𝕋𝔸ℝ𝕋𝔼𝔻!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐚𝐠𝐚𝐢𝐧\n\nʙᴏᴛ ᴏғ ᴄʟᴏᴜᴅ sᴛᴀᴛɪᴏɴ ᴍɪʀʀᴏʀ\n\n#Rebooted #Restarted'
                 for tag, links in data.items():
                      msg += f"\n\n{tag}: "
                      for index, link in enumerate(links, start=1):
@@ -237,7 +237,7 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        bot.edit_message_text("𝕄𝕀ℝℝ𝕆ℝ 𝔹𝕆𝕋 ℝ𝔼𝕊𝕋𝔸ℝ𝕋𝔼𝔻!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐚𝐠𝐚𝐢𝐧\n\n𝐁𝐎𝐓 𝐎𝐅 𝐁𝐑𝐔𝐂𝐄 𝐌𝐈𝐑𝐑𝐎𝐑\n\n#Rebooted #Updated", chat_id, msg_id)
+        bot.edit_message_text("𝕄𝕀ℝℝ𝕆ℝ 𝔹𝕆𝕋 ℝ𝔼𝕊𝕋𝔸ℝ𝕋𝔼𝔻!\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 𝐲𝐨𝐮𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐬 𝐚𝐠𝐚𝐢𝐧\n\nʙᴏᴛ ᴏғ ᴄʟᴏᴜᴅ sᴛᴀᴛɪᴏɴ ᴍɪʀʀᴏʀ\n\n#Rebooted #Updated", chat_id, msg_id)
         osremove(".restartmsg")
 
     start_handler = CommandHandler(BotCommands.StartCommand, start, run_async=True)
